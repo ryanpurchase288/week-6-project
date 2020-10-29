@@ -20,7 +20,8 @@ which can Create, Read, Update and, Delete records from a database
 ## Project Planning
 Here is a link to my trello board:https://trello.com/b/orijlmtZ/week-6-project
 
-![Trello Board] (https://github.com/ryanpurchase288/week-6-project/blob/main/images/trello.PNG?raw=true)
+![Trello Board](https://github.com/ryanpurchase288/week-6-project/blob/main/images/trello.PNG?raw=true)
+
 
 
 ## Risk Assessment
