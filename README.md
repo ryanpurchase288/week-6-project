@@ -1,10 +1,10 @@
 # week-6-project
 
 ## Contents
-* [Objective] (#objective)
-* [Project Planning] (#project-planning)
-* [Risk Assessment] (#risk-assessment)
-* [ERD] (#erd)
+* [Objective] (https://github.com/ryanpurchase288/week-6-project#objective)
+* [Project Planning] (https://github.com/ryanpurchase288/week-6-project#project-planning)
+* [Risk Assessment] (https://github.com/ryanpurchase288/week-6-project#risk-assessment)
+* [ERD] (https://github.com/ryanpurchase288/week-6-project#erd)
 
 
 
