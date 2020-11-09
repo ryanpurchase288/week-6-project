@@ -1,0 +1,11 @@
+<html>
+        <body>
+                <h1> Game Session Tracker </h1>
+		<a href= "{{ url_for('index') }}"> Home </a> &nbsp;
+		<a href="{{ url_for('add') }}">Add New Game</a>
+		<br> <br>
+                {% block body %}
+		{% endblock body%}
+		
+        </body>
+</html>
