@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField,  SubmitField, IntegerField, DateField
 from wtforms.validators import DataRequired, ValidationError
-from application.models import Game, Session
+from application.models import Game, Sessions
 
 
 class GameForm(FlaskForm):
@@ -9,7 +9,7 @@ class GameForm(FlaskForm):
     platform =  StringField('Platform', validators = [DataRequired()])
     submit = SubmitField('Submit')
 
-class SessionForm(FllaskForm):
+class SessionForm(FlaskForm):
     time = IntegerField('Time Played(Mins):', validators = [DataRequired()])
     date = DateField('Date:', validators = [DataRequired()])
     submit = SubmitField('Submit')

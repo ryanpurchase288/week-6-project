@@ -5,8 +5,7 @@ class Game(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), nullable=False)
     platform = db.Column(db.String(30), nullable=False)
-    description = db.Column(db.String(255), nullable=False)
-    games= = db.relationship('Sessions', backref='game')
+    games = db.relationship('Sessions', backref='game')
 
     
 

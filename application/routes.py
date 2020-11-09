@@ -13,7 +13,7 @@ def add():
     form = GameForm()
     if form.validate_on_submit():
         new_game= Game(name = form.game.data, platform = form.platform.data)
-        db.session.add(new_game
+        db.session.add(new_game)
         db.session.commit()
         return redirect(url_for('index'))
     return render_template('addgame.html', form=form)
