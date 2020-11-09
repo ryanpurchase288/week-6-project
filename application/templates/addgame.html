@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block body %}
+<form action ='' method='POST'>
+	{{ form.hidden_tag() }}
+	{{ form.game.label }} {{ form.game }} <br>
+	{% if form.game.errors %}
+	{% for error in form.game.errors %}
+	{{error}}<br>
+	{% endfor %}
+	{% endif %}
+	{{ form.platform.label}} {{ form.platform }} <br>
+        {% if form.platform.errors %}
+        {% for error in form.platform.errors %}
+        {{error}}<br>
+        {% endfor %}
+        {% endif %}
+	{{ form.submit }}
+</form>
+{% endblock body %}

@@ -1,8 +1,10 @@
 {% extends 'layout.html %}
 {% block body %}
 
-
-
-
+{% for game in gameList %}
+<p> {{ game.name }} &nbsp; {{ game.platform }} <br>
+</p>
+{% endfor %}
 
 {% endblock body %}
+
