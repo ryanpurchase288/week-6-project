@@ -3,6 +3,13 @@
 
 {% for game in gameList %}
 <p> {{ game.name }} &nbsp; {{ game.platform }} <br>
+<form action='{{ url_for('update', idNum=game.id) }}'>
+<input type=submit value="Update Game">
+</form>
+<form action='{{ url_for('delete', idNum=game.id) }}'>
+<input type=submit value="Delete">
+</form>
+<p> --------------------------------------------- </p>
 </p>
 {% endfor %}
 
