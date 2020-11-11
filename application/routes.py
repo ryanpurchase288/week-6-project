@@ -43,7 +43,7 @@ def delete(idNum):
 @app.route('/view/<idNum>', methods=['POST', 'GET'])
 def viewSession(idNum):
 
-    return render_template('viewsessions.html', sessionList = Sessions.query.filter_by(id=idNum).all(), game = Game.query.get(idNum)) 
+    return render_template('viewsessions.html', sessionList = Sessions.query.filter_by(game_id=idNum).all(), game = Game.query.get(idNum)) 
 
 @app.route('/addsession/<idNum>', methods=['POST', 'GET'])
 def addsession(idNum):
@@ -57,16 +57,27 @@ def addsession(idNum):
 
 
 @app.route('/deletesession/<idNum>')
-def deleteession(idNum):
+def deletesession(idNum):
     session= Sessions.query.get(idNum)
+    game = session.game_id
     db.session.delete(session)
     db.session.commit()
-    return redirect(url_for('viewsessions'))
+    return redirect(url_for('index'))
 
 
-
-
-
+@app.route('/updatesession/<idNum>', methods=['POST', 'GET'])
+def updatesession(idNum):
+    form = SessionForm()
+    session = Sessions.query.get(idNum)
+    if form.validate_on_submit():
+        session.time_played = form.time.data
+        session.date_played = form.date.data
+        db.session.commit()
+        return redirect(url_for('viewSession', idNum=session.game_id))
+    elif request.method == 'GET':
+        form.time.data = session.time_played
+        form.date.data = session.date_played
+    return render_template('updatesession.html', title='Update your session', form=form, game = Game.query.get(session.game_id))
 
 
 

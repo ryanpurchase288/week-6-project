@@ -4,8 +4,11 @@
 <p> --------------------------------------------- </p>
 {% for session in sessionList %}
 <p>Time played: {{ session.time_played }} &nbsp; on: {{ session.date_played }}
-<form action='{{ url_for('delete', idNum=game.id) }}'>
+<form action='{{ url_for('deletesession', idNum=session.id) }}'>
 <input type=submit value="Delete">
+</form>
+<form action='{{ url_for('updatesession', idNum=session.id) }}'>
+<input type=submit value="Update Session">
 </form>
 
 

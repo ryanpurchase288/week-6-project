@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<p><h2> {{ game.name }} &nbsp; {{ game.platform }} </h2></p>
+    <form action='' method='POST'>
+        {{ form.hidden_tag() }}
+	{{ form.time.label }} {{ form.time }} <br>
+        {% if form.time.errors %}
+            {% for error in form.time.errors %}
+                {{ error }}<br>
+            {% endfor %}
+        {% endif %}
+
+	{{ form.date.label}} {{ form.date }} <br>
+        {% if form.date.errors %}
+       		 {% for error in form.date.errors %}
+       			 {{error}}<br>
+       		 {% endfor %}
+        {% endif %}
+        {{ form.submit }}
+    </form>
+{% endblock body %}
