@@ -9,6 +9,12 @@
 <form action='{{ url_for('delete', idNum=game.id) }}'>
 <input type=submit value="Delete">
 </form>
+<form action='{{ url_for('viewSession', idNum=game.id) }}'>
+<input type=submit value="View Sessions">
+</form>
+<form action='{{ url_for('addsession', idNum=game.id) }}'>
+<input type=submit value="Add Sessions">
+</form>
 <p> --------------------------------------------- </p>
 </p>
 {% endfor %}

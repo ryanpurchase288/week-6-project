@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+<p><h2> {{ game.name }} &nbsp; {{ game.platform }} </h2></p>
+<p> --------------------------------------------- </p>
+{% for session in sessionList %}
+<p>Time played: {{ session.time_played }} &nbsp; on: {{ session.date_played }}
+<form action='{{ url_for('delete', idNum=game.id) }}'>
+<input type=submit value="Delete">
+</form>
+
+
+
+<p> --------------------------------------------- </p>
+</p>
+{% endfor %}
+
+{% endblock body %}

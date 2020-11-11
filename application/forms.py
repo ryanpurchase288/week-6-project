@@ -6,7 +6,7 @@ from application.models import Game, Sessions
 
 class GameForm(FlaskForm):
     game =  StringField('Name:', validators = [DataRequired(),
-            Length(min=3, max=60, message='your name is too short or long')]
+            Length(min=3, max=60, message='your name is too short or long')])
     platform =  StringField('Platform', validators = [DataRequired(),
         Length(min=3, max=60, message='your name is too short or long')])
     submit = SubmitField('Submit')
