@@ -5,7 +5,7 @@
 * [Project Planning](https://github.com/ryanpurchase288/week-6-project#project-planning)
 * [Risk Assessment](https://github.com/ryanpurchase288/week-6-project#risk-assessment)
 * [ERD](https://github.com/ryanpurchase288/week-6-project#erd)
-* {Software Development](https://github.com/ryanpurchase288/week-6-project#software-development)
+* [Software Development](https://github.com/ryanpurchase288/week-6-project#software-development)
 * [Testing]https://github.com/ryanpurchase288/week-6-project#testing
 
 
@@ -38,7 +38,7 @@ https://1drv.ms/x/s!Av4eZvsa3rmzl339kxYvGHdAFH-I?e=d2SXho
 
 
 
-## Software Develoment
+## Software Development
 
 
 
