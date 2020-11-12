@@ -36,6 +36,10 @@ def update(idNum):
 @app.route('/delete/<idNum>')
 def delete(idNum):
     game= Game.query.get(idNum)
+    session = Sessions.query.filter_by(game_id=idNum).all()
+    for count in session:
+        db.session.delete(session)
+        db.session.commit()
     db.session.delete(game)
     db.session.commit()
     return redirect(url_for('index'))
