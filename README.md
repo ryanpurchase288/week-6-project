@@ -6,7 +6,7 @@
 * [Risk Assessment](https://github.com/ryanpurchase288/week-6-project#risk-assessment)
 * [ERD](https://github.com/ryanpurchase288/week-6-project#erd)
 * [Software Development](https://github.com/ryanpurchase288/week-6-project#software-development)
-* [Testing]https://github.com/ryanpurchase288/week-6-project#testing
+* [Testing](https://github.com/ryanpurchase288/week-6-project#testing)
 
 
 
