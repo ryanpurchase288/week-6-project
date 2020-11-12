@@ -3,7 +3,8 @@ from flask import url_for
 from flask_testing import TestCase
 
 
-from application import app, db, Game, Sessions
+from application import app, db
+from application.models import Game, Sessions
 
 class TestBase(TestCase):
     def create_app(self):
@@ -51,5 +52,5 @@ class TestViews(TestBase):
         self.assertEqual(response.status_code,200)
 
     def test_delete_get(self):
-        response = self.client.get(url_for('delete'))
+        response = self.client.get(url_for('delete', idNum=1))
         self.assertEqual(response.status_code,302)
