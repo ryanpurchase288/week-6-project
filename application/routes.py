@@ -38,7 +38,8 @@ def delete(idNum):
     game= Game.query.get(idNum)
     session = Sessions.query.filter_by(game_id=idNum).all()
     for count in session:
-        db.session.delete(session)
+        session1 = Sessions.query.filter_by(game_id=idNum).first()
+        db.session.delete(session1)
         db.session.commit()
     db.session.delete(game)
     db.session.commit()
