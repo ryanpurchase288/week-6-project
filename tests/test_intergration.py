@@ -60,9 +60,11 @@ class TestAdd(TestBase):
         self.driver.find_element_by_xpath('//*[@id="submit"]').click()
         time.sleep(1)
         
-
-        # Assert that browser redirects to index page
+        game = Game.query.first()
+      
+      # Assert that browser redirects to index page
         assert url_for('index') in self.driver.current_url
+        assert test_game_name in game
 
 if __name__ == '__main__':
     unittest.main(port=5000)
