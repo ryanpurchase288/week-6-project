@@ -24,6 +24,8 @@ Here is a link to my trello board:https://trello.com/b/orijlmtZ/week-6-project
 
 ![Trello Board](https://github.com/ryanpurchase288/week-6-project/blob/main/images/trello.PNG?raw=true)
 
+I have kept this updated as I have completed tasks for me to complete.
+
 
 
 ## Risk Assessment
@@ -36,6 +38,7 @@ https://1drv.ms/x/s!Av4eZvsa3rmzl339kxYvGHdAFH-I?e=d2SXho
 ## ERD
 ![ERD](https://github.com/ryanpurchase288/week-6-project/blob/main/images/Project_ERD.png?raw=true)
 
+This is my Entity Relationship Diagram. I decided not to include the description of the Game from the Game table just for display reasons on the flask page as it was not a neccessary data to have in the table.
 
 
 ## Software Development
@@ -43,5 +46,7 @@ https://1drv.ms/x/s!Av4eZvsa3rmzl339kxYvGHdAFH-I?e=d2SXho
 
 
 ## Testing
+This is the test coverage I have achieved on my project:
+![Test Coverage](https://github.com/ryanpurchase288/week-6-project/blob/main/images/coverage.PNG)
 
-
+I have conducted both unit testing and intergration testing. With unit testing I conducted tests which ensures all the pages/views can be accessed by the user. I also tests the functions for adding a game and a session to make sure the tables are related and working together. I also tested the update function to ensure that it is able to read and update the data.  I have planned to also do the delete test to ensure that the full CRUD application is working. 
