@@ -61,7 +61,7 @@ class TestAdd(TestBase):
         time.sleep(1)
         
 
-        # Assert that browser redirects to login page
+        # Assert that browser redirects to index page
         assert url_for('index') in self.driver.current_url
 
 if __name__ == '__main__':

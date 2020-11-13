@@ -1,4 +1,6 @@
-
+htmlcov/
+.coverage
+.coverage.*
 *,cover
 *.db
 __pycache__/
