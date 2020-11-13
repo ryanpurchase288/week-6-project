@@ -1,5 +1,5 @@
 htmlcov/
-.coverage
+*.coverage
 .coverage.*
 *,cover
 *.db
