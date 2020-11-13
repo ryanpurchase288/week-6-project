@@ -64,7 +64,7 @@ class TestAdd(TestBase):
       
       # Assert that browser redirects to index page
         assert url_for('index') in self.driver.current_url
-        assert test_game_name in game
+        assert test_game_name ==  game.name
 
 if __name__ == '__main__':
     unittest.main(port=5000)
