@@ -16,7 +16,7 @@ from datetime import datetime
 class TestBase(LiveServerTestCase):
 
     def create_app(self):
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'
         app.config['SECRET_KEY'] = 'scnbuidsbcduisb'
         return app
 
