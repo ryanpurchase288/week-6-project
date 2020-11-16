@@ -57,7 +57,7 @@ https://1drv.ms/x/s!Av4eZvsa3rmzl339kxYvGHdAFH-I?e=d2SXho
 
 
 ## ERD
-![ERD](https://github.com/ryanpurchase288/week-6-project/blob/main/images/Project_ERD.png?raw=true)
+![ERD](https://github.com/ryanpurchase288/week-6-project/blob/main/images/erd-v2.png)
 
 This is my Entity Relationship Diagram. I decided not to include the description of the Game from the Game table just for display reasons on the flask page as it was not a neccessary data to have in the table.
 
