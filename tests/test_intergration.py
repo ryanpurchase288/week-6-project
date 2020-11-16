@@ -47,13 +47,13 @@ class TestAdd(TestBase):
         Test that a user can add a game if all the field are correctly filled out
         """
 
-        # Click register menu link
+
         self.driver.find_element_by_xpath("/html/body/a[2]").click()
         time.sleep(1)
         test_game_name='Skyrim'
         test_platform='Xbox'
 
-        # Fill in registration form
+       
         self.driver.find_element_by_xpath('//*[@id="game"]').send_keys(test_game_name)
         self.driver.find_element_by_xpath('//*[@id="platform"]').send_keys(
             test_platform)
@@ -62,7 +62,7 @@ class TestAdd(TestBase):
         
         game = Game.query.first()
       
-      # Assert that browser redirects to index page
+  
         assert url_for('index') in self.driver.current_url
         assert test_game_name ==  game.name
 
